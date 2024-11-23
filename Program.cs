@@ -1,6 +1,4 @@
-﻿using netcore.coupling;
+﻿using netcore.composition;
 
-// with the hellp of abstaction and decoupling I can choose both way to send notification
-// Order order = new Order(new EmailSender());
-Order order = new Order(new SmsSender());
-order.PlaceOrder();
+var car = new Car();
+car.StartCar();
