@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace netcore.coupling
 {
-    public class EmailSender : INotificationService
+    public class SmsSender : INotificationService
     {
-
         public void SendNotification(string message)
         {
-            System.Console.WriteLine($"Sending email: {message}");
+            System.Console.WriteLine($"Sms message: {message}");
         }
     }
 }

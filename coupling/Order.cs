@@ -7,11 +7,16 @@ namespace netcore.coupling
 {
     public class Order
     {
+        private readonly INotificationService notificationService;
+        public Order(INotificationService notificationService)
+        {
+            this.notificationService = notificationService;
+        }
         public void PlaceOrder()
         {
             // Place order loogic...
-            EmailSender email = new EmailSender();
-            email.SendEmail("Order placed successfully");
+            // EmailSender email = new EmailSender();
+            notificationService.SendNotification("Order placed successfully");
         }
     }
 }
