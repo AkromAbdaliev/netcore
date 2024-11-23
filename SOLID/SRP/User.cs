@@ -10,13 +10,6 @@ namespace netcore.SOLID.SRP
         public string UserName { get; set; }
         public string Email { get; set; }
 
-        public void Register()
-        {
-            // User registering logic...
 
-            // Send email
-            EmailSender emailSender = new EmailSender();
-            emailSender.SendEmail(Email, "Welcome to our platform");
-        }
     }
 }
