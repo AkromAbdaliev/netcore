@@ -1,22 +1,26 @@
-﻿using netcore.inheritance;
+﻿
+using netcore.polymorphism;
 
-var car = new Car();
+var lion = new Lion();
+lion.Family = "Mammals";
+lion.Type = "Wild";
+lion.Status = "Predator";
+lion.Pride = "Western";
+lion.AnimalSound();
+lion.AnimalEats();
 
-car.Brand = "Mustang";
-car.Model = "Sedan";
-car.Year = 1996;
+var hyena = new Hyena();
+hyena.Family = "Mammals";
+hyena.Type = "Wild";
+hyena.Status = "Predator";
+hyena.Clan = "Eastern";
+hyena.AnimalSound();
+hyena.AnimalEats();
 
-car.NumberOfDoors = 4;
-car.NumberOfWheels = 4;
-
-car.Start();
-car.Stop();
-
-var bike = new Bike();
-bike.Brand = "Ducatti";
-bike.Model = "Sport";
-bike.Year = 2024;
-bike.NumberOfWheels = 2;
-
-bike.Start();
-bike.Stop();
+var zebra = new Zebra();
+zebra.Family = "Mammals";
+zebra.Type = "Wild";
+zebra.Status = "Herbivores";
+zebra.Group = "Lakeside";
+zebra.AnimalSound();
+zebra.AnimalEats();
